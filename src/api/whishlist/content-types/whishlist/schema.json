@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whishlists",
+  "info": {
+    "singularName": "whishlist",
+    "pluralName": "whishlists",
+    "displayName": "Whishlist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    }
+  }
+}
