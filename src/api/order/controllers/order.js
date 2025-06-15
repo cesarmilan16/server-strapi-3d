@@ -24,8 +24,8 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
         let totalPayment = 0;
         products.forEach((product) => {
             const priceTemp = calcDiscountPrice(
-                product.attributes.price,
-                product.attributes.discount
+                product.price,
+                product.discount
             );
 
             totalPayment += Number(priceTemp) * product.quantity;
