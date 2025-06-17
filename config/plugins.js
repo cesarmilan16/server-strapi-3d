@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
         providerOptions: {
           s3Options: {
             credentials: {
-              accessKeyId: env('AWS_ACCESS_KEY_ID'),
+              accessKeyId: "AKIA4SYAMIADMF52HLED",
               secretAccessKey: env('AWS_ACCESS_SECRET'),
             },
             region: "eu-west-1",
