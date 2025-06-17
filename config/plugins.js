@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
             params: {
               ACL: env('AWS_ACL', 'public-read'),
               signedUrlExpires: env('AWS_SIGNED_URL_EXPIRES', 15 * 60),
-              Bucket: env('AWS_BUCKET'),
+              Bucket: "ecommerce-3d",
             },
           },
         },
